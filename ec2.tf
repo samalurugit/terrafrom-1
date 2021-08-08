@@ -1,5 +1,5 @@
 resource "aws_instance" "myweb" {
-  count = 3
+  count = 2
   ami           = var.instance-ami
   instance_type = var.instance-type
   subnet_id = aws_subnet.public-sub-1.id
@@ -9,8 +9,9 @@ resource "aws_instance" "myweb" {
   availability_zone = "us-east-2a"
 
   tags = {
-    Name = "linux-server${count.index+1}"
-    Env = "prod"
+    #Name = var.ec2-name
+    Name = "${var.aws_env}"-server-${count.index+1}
+    Env = var.aws_env
     Owner = "pavan"
   }
 }

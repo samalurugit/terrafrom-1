@@ -1,0 +1,1 @@
+terraform init -backend-config=backend.json --> to intialize the backend of logs file to s3(this should be done every time you edit any file)

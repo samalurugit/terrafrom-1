@@ -10,3 +10,5 @@ cidr_block_vpc = "20.0.0.0/16"
 sub_1 ="20.0.1.0/24"
 sub_2 ="20.0.2.0/24"
 keypair = "prodkey"
+#ec2-name = "prod-server${count.index+1}" mistake
+aws_env = "prod"

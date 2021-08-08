@@ -17,5 +17,7 @@ variable "sub_2"{}
 variable "vpc_name"{}
 variable "igw-prod"{}
 variable "keypair"{}
+#variable "ec2-name"{} mistake
+variable "aws_env"{}
 
 

@@ -10,3 +10,5 @@ cidr_block_vpc = "30.0.0.0/16"
 sub_1 ="30.0.1.0/24"
 sub_2 ="30.0.2.0/24"
 keypair = "devkey"
+#ec2-name = "dev-server${count.index+1}" mistake
+aws_env = "dev"
